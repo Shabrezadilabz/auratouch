@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Aura Touch"
+description = "A visually stunning landing page for Aura Touch, an NFC 'super-passport' product for India. Features an animated 3D exploded-view NFC chip, scroll-triggered animations, product value sections, how-it-works walkthrough, security section, FAQ, and a bold call to action."
+version = "1.0.0"
+id = "artifacts/aura-touch"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18089
+
+[services.development]
+run = "pnpm --filter @workspace/aura-touch run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/aura-touch", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/aura-touch/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18089"
+BASE_PATH = "/"

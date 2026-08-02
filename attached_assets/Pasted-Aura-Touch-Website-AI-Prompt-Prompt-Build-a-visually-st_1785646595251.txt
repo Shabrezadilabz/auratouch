@@ -1,0 +1,48 @@
+Aura Touch – Website AI Prompt
+Prompt:
+
+Build a visually striking, modern landing page for a product called “Aura Touch”—the universal NFC “super-passport” for India and the world. The design should heavily feature a 3D-style, animated, exploded view of our NFC chip, matching the attached reference image, and use a clean, tech-forward aesthetic with subtle Indian/color accents.
+
+Key sections and features:
+
+Animated Hero Section:
+Centered “exploded view” animation of the NFC chip, with smoothly separated layers:
+Upper epoxy dome (custom branding)
+Graphic layer (NFC + QR code)
+NFC inlay with coil antenna and chip
+Core substrate
+Adhesive base
+Each layer animates in on scroll or load, with tooltip popups showing its purpose.
+Allow users to “hover” or “tap” on layers for quick explanations.
+Add an animation showing a phone or watch tapping the chip and sending animated signal waves down the stack.
+Product Value Section:
+“One Tap. Infinite Possibilities.” Animated cards or icons for:
+Payments
+Hotel/Airbnb access
+Metro/transport
+Bookings & tickets
+Healthcare/medical ID
+Loyalty/rewards
+Event/campus check-in
+How It Works Section:
+Step-by-step, scroll-triggered or clickable walkthrough:
+Stick Aura Touch chip to your phone or accessory
+Pair with the Aura Touch app (animated screen, QR, Bluetooth)
+Tap at any NFC reader/access point (store, hotel, event, bus, etc.)
+Instantly pay, unlock, check in, or verify—all options configurable in-app
+Security & Privacy Section:
+Animated lock/shield, explaining that all data is encrypted, you control permissions, and nothing is shared without user consent.
+Brand Section:
+Logos of partners: hotels, retail, metro/transport, medical, university/event.
+FAQ Section:
+Expand/collapse animated answers for the most common questions (compatibility, security, use cases, how to order, etc.)
+Animated Call to Action:
+“Join the Tap Future” with a glowing, attention-grabbing signup button.
+Style & Visuals:
+
+Inspired by Apple product pages, with depth, lighting, and clean fonts.
+Use the exploded-view NFC diagram style as the core motif for brand identity.
+Bright, welcoming colors (teal, indigo, gold highlights) for Indian context.
+All illustrations should feel alive—use scroll/hover/tap interactions, Lottie or SVG, smooth transitions.
+Responsive and mobile-first; keep performance high.
+Show the attached NFC exploded chip image as a center visual or re-create it in a 3D/SVG web animation
