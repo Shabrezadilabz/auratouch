@@ -1,0 +1,12 @@
+[build]
+  command = "npx pnpm@10.15.1 --filter @workspace/nfc-landing run build"
+  publish = "artifacts/nfc-landing/dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+  PNPM_FLAGS = "--ignore-scripts"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

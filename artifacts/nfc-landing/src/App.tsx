@@ -12,6 +12,7 @@ import {
 import { Route, Switch } from "wouter";
 import { BrandWorldSection } from "./components/BrandWorldSection";
 import { ExplodedChip } from "./components/ExplodedChip";
+import { GlobalLogoCube } from "./components/GlobalLogoCube";
 import { Navbar } from "./components/Navbar";
 import { Reveal } from "./components/Reveal";
 import { ScrollCardStory } from "./components/ScrollCardStory";
@@ -69,6 +70,7 @@ function LandingPage() {
   return (
     <>
       <Navbar />
+      <GlobalLogoCube />
       <main>
         <section className="hero page-pad" id="top">
           <div className="hero-video" aria-hidden="true">
@@ -130,7 +132,7 @@ function LandingPage() {
           </div>
         </section>
 
-        <div className="scrub-spacer page-pad" aria-hidden="true">
+        <div className="scrub-spacer page-pad cube-zone" aria-hidden="true">
           <div className="scrub-line">
             <span style={{ transform: `scaleX(${progress})` }} />
           </div>
@@ -140,7 +142,10 @@ function LandingPage() {
         <ScrollCardStory />
         <BrandWorldSection />
 
-        <section className="technology page-pad section-shell" id="technology">
+        <section
+          className="technology page-pad section-shell cube-zone"
+          id="technology"
+        >
           <div className="section-top">
             <Reveal delay={120}>
               <div className="accent-badge">
@@ -221,7 +226,7 @@ function LandingPage() {
 
         <UseCaseShowcase />
 
-        <section className="tap-story page-pad section-shell">
+        <section className="tap-story page-pad section-shell cube-zone">
           <div className="tap-visual" aria-hidden="true">
             <div className="tap-orbit orbit-one" />
             <div className="tap-orbit orbit-two" />
@@ -301,7 +306,7 @@ function LandingPage() {
           </div>
         </section>
 
-        <section className="final-cta page-pad">
+        <section className="final-cta page-pad cube-zone">
           <div className="final-glow" aria-hidden="true" />
           <Reveal delay={100}>
             <Sparkles size={25} strokeWidth={1.25} />
@@ -347,18 +352,20 @@ function LandingPage() {
 
 export default function App() {
   return (
-    <Switch>
-      <Route path="/how-it-works" component={HowItWorksPage} />
-      <Route path="/login" component={LoginPage} />
-      <Route path="/portal" component={CustomerPortalPage} />
-      <Route path="/pay/:orderId" component={PaymentPage} />
-      <Route path="/track/:code" component={TrackPage} />
-      <Route path="/admin" component={AdminDashboardPage} />
-      <Route path="/scan/menu" component={FoodMenuPage} />
-      <Route path="/scan/drive" component={DriveUploadPage} />
-      <Route path="/scanner" component={CameraScannerPage} />
-      <Route path="/scan" component={ScanHubPage} />
-      <Route component={LandingPage} />
-    </Switch>
+    <>
+      <Switch>
+        <Route path="/how-it-works" component={HowItWorksPage} />
+        <Route path="/login" component={LoginPage} />
+        <Route path="/portal" component={CustomerPortalPage} />
+        <Route path="/pay/:orderId" component={PaymentPage} />
+        <Route path="/track/:code" component={TrackPage} />
+        <Route path="/admin" component={AdminDashboardPage} />
+        <Route path="/scan/menu" component={FoodMenuPage} />
+        <Route path="/scan/drive" component={DriveUploadPage} />
+        <Route path="/scanner" component={CameraScannerPage} />
+        <Route path="/scan" component={ScanHubPage} />
+        <Route component={LandingPage} />
+      </Switch>
+    </>
   );
 }
